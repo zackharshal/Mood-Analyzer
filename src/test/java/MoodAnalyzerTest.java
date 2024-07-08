@@ -7,13 +7,13 @@ public class MoodAnalyzerTest {
     public void result1(){
         MoodAnalyzer mood1 = new MoodAnalyzer(null);
         String result = mood1.analyseMood();
-        Assert.assertEquals("HAPPY", result);
+        Assert.assertEquals("NULL", result);
     }
-//    @Test
-//    public void result2(){
-//        MoodAnalyzer mood1 = new MoodAnalyzer("I am in Happy Mood");
-//        String result = mood1.analyseMood();
-//        Assert.assertEquals("HAPPY", result);
-//    }
+    @Test
+    public void result2(){
+        MoodAnalyzer mood1 = new MoodAnalyzer("");
+        String result = mood1.analyseMood();
+        Assert.assertEquals("EMPTY", result);
+    }
 
 }
