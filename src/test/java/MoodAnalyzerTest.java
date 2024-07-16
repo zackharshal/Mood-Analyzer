@@ -4,10 +4,10 @@ import org.junit.Test;
 
 public class MoodAnalyzerTest {
     @Test
-    public void result1(){
+    public void nullPointerTest(){
         MoodAnalyzer mood1 = new MoodAnalyzer(null);
-        String result = mood1.analyseMood();
-        Assert.assertEquals("HAPPY", result);
+        boolean result = mood1.analyseMood();
+        Assert.assertEquals(true, result);
     }
 //    @Test
 //    public void result2(){
